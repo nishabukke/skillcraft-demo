@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0;
+    color: #000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.section--lg{
+    padding: 50px 0px;
+}
+
+/* header css start */
+
+.header{
+    background-color: #fff;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header img{
+    width: 100%;
+    height: 120px;
+}
+
+
+.tj-menu-area #mobile-menu > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+} 
+
+.tj-menu-area li {
+    position: relative;
+}
+
+.tj-menu-area #mobile-menu > ul > li > a {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover > a{
+    color: #FFA300;
+    border-bottom: 3px solid #3f444b;
+}
+
+.nav-link::after{
+    content: "";
+    height: 10px;
+    border-left: 3px solid #FFA300;
+    align-self: center;
+}
+
+.tj-menu-area .has-dropdown:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tj-menu-area .has-dropdown:hover .fa-caret-down{
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+}
+
+.tj-menu-area li .sub-menu li a.active::before, .tj-menu-area li .sub-menu li a:hover::before {
+    width: 14px;
+}
+
+.tj-menu-area li .sub-menu {
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    left: 0%;
+    top: 160%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    width: 350px;
+    background-color: #fff;
+}
+
+.tj-menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.tj-menu-area li .sub-menu li {
+    display: block;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.tj-menu-area li .sub-menu li:hover{
+    background-color: #3f444b;
+}
+
+.tj-menu-area li .sub-menu li:hover a{
+    color: #fff;
+}
+
+.right-header{
+    display: flex;
+    gap: 15px;
+}
+
+.right-header i{
+    font-size: 14px;
+}
+
+/* header css end */
+
+
+/* course name container css start  */
+
+.course-name__container{
+    background-color: #f3f1f6;
+}
+
+
+.course-name-inner h1{
+    color: #FF6E00;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* course name container css end  */
+
+/* course content container css start */
+
+.course-content__container img{
+    width: 60%;
+}
+
+.course-content__container p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 15px;
+}
+
+.key-points-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.left-kp p, .right-kp p{
+    margin: 5px 0px;
+    color: #3f444b;
+}
+
+.left-kp p span, .right-kp p span{
+    margin-right: 10px;
+}
+
+.enroll-btn{
+    padding: 10px 80px;
+    border-radius: 5px;
+    background-color: #8e43f0;
+    border: 1px solid #8e43f0;
+    color: #fff;
+    display: flex;
+    width: max-content;
+    margin: 20px auto;
+}
+
+.enroll-btn:hover{
+    background-color: #fff;
+    color: #6300E2;
+}
+
+
+.TabButton {
+    width: 100%;
+    color: #3f444b;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #FFFFFF;
+  margin: 0;
+  font-weight: normal;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.TabButtonSelected {
+  color: #FF6E00 !important;
+  border-bottom-color: #FFA300 !important;
+  background-color: #ffe0ab;
+  font-weight: 600;
+}
+
+.d-chart-n {
+display: none;
+}
+
+.d-chart-show {
+display: block;
+}
+
+
+
+
+/* course content container css end */
+
+/* footer css start */
+
+.footer{
+    background-image: url('images/footer-bg.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+    background-attachment: scroll;
+    border-top: 1px solid red;
+}
+
+.footer-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.footer-links h3{
+    margin-bottom: 20px;
+}
+
+.footer-links ul li{
+    margin: 10px 0px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.footer-links ul li:hover a{
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.lower-footer{
+    background-color: #6300E2;
+    color: #fff;
+    font-weight: 300;
+}
+
+.lower-footer-inner p span{
+    color: #000;
+}
+
+.lower-footer-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer css end */
